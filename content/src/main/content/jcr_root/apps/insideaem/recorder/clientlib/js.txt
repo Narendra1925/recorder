@@ -1,0 +1,6 @@
+js/namespace.js
+js/constants.js
+js/recorderController.js
+js/recorderButton.js
+js/recorderPanel.js
+js/sidekickHook.js

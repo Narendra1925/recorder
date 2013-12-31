@@ -1,0 +1,14 @@
+/**
+* online and offline icons from http://www.icons-land.com/
+*/
+#CQ .cq-sidekick-tab-icon-recorder{
+	background-image: url('icons/recorder.png')
+}
+
+#CQ .recorder-online{
+	background-image: url('icons/online.png')
+}
+
+#CQ .recorder-offline{
+	background-image: url('icons/offline.png')
+}
