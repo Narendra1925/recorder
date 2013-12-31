@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>recorder-bundle</artifactId>
+            <artifactId>insideaem-recorder-bundle</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

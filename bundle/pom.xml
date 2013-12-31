@@ -15,7 +15,7 @@
 	<!-- P R O J E C T D E S C R I P T I O N -->
 	<!-- ====================================================================== -->
 
-	<artifactId>aem-recorder-bundle</artifactId>
+	<artifactId>insideaem-recorder-bundle</artifactId>
 	<packaging>bundle</packaging>
 	<name>InsideAEM Recorder Bundle</name>
 
