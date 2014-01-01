@@ -4,6 +4,7 @@
 com.insideaem.recorder.RecorderPanel = CQ.Ext.extend(CQ.Ext.Panel, {
     tabTip : 'Recorder',
     iconCls : 'cq-sidekick-tab cq-sidekick-tab-icon-recorder',
+    hidden: true,
     mask : function() {
         this.setDisabled(true);
     },
@@ -32,7 +33,12 @@ com.insideaem.recorder.RecorderPanel = CQ.Ext.extend(CQ.Ext.Panel, {
             autoLoad : true,
             url : com.insideaem.recorder.STORE_URL,
             groupField : 'recorderSessionName',
-            reader : reader
+            reader : reader,
+            listeners:{
+                load: function(){
+                    me.setVisible(true);
+                }
+            }
         });
         
         function activateChangesInSession(sessionName) {

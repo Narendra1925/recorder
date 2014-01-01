@@ -57,7 +57,7 @@
                     <embeddeds>
                         <embedded>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>recorder-bundle</artifactId>
+                            <artifactId>insideaem-recorder-bundle</artifactId>
                             <target>/apps/insideaem/recorder/install</target>
                         </embedded>
                     </embeddeds>
