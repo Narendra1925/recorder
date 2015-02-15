@@ -1,14 +1,23 @@
 /**
 * online and offline icons from http://www.icons-land.com/
 */
-#CQ .cq-sidekick-tab-icon-recorder{
-	background-image: url('icons/recorder.png')
+.cq-sidekick-tab-icon-recorder,
+.cq-switcher-icon-recorder-inactive,
+.cq-switcher-icon-recorder,
+.icon-recorder{
+	background-image: url('icons/recorder.png');
 }
 
-#CQ .recorder-online{
+.icon-recorder{
+	background-repeat: no-repeat;
+	background-size: 28px;
+	background-position: 8px 8px;
+}
+
+.recorder-online{
 	background-image: url('icons/online.png')
 }
 
-#CQ .recorder-offline{
+.recorder-offline{
 	background-image: url('icons/offline.png')
 }

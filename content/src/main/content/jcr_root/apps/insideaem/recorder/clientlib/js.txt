@@ -3,4 +3,5 @@ js/constants.js
 js/recorderController.js
 js/recorderButton.js
 js/recorderPanel.js
+js/recorderView.js
 js/sidekickHook.js

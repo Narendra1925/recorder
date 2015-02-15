@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	xmlns:rep="internal"
+	jcr:mixinTypes="[cq:Console]"
+	consoleDescription="List of changes performed"
+	consoleTitle="InsideAEM Recorder"
+	historyLink="/content/insideaem/recorder.html"
+	historyShow="{Boolean}true"
+	sling:resourceType="cq/ui/components/widget"
+	xtype="recorderview"
+	jsLibs="[insideaem.recorder]"
+	historyTitle="My recorded changes"
+	iconClass="icon-recorder"
+	sling:vanityPath="/insideaemrecorder"
+	jcr:primaryType="nt:unstructured" />
