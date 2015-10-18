@@ -46,7 +46,7 @@
                     <includeEmptyDirs>true</includeEmptyDirs>
                 </configuration>
             </plugin>
-
+			
             <plugin>
                 <groupId>com.day.jcr.vault</groupId>
                 <artifactId>content-package-maven-plugin</artifactId>
@@ -67,6 +67,38 @@
         </plugins>
     </build>
     <profiles>
+		<profile>
+			<id>aempackagediff</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.insideaem.maven.plugin</groupId>
+						<artifactId>aempackagediff</artifactId>
+						<executions>
+							<execution>
+								<id>aempackagediff</id>
+								<phase>prepare-package</phase>
+								<goals>
+									<goal>aempackagediff</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<outputDirectory>${project.build.directory}/aempackagediff</outputDirectory>
+						</configuration>
+					</plugin>
+					
+					<plugin>
+						<groupId>com.day.jcr.vault</groupId>
+						<artifactId>content-package-maven-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<filterSource>target/aempackagediff/filter.xml</filterSource>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
         <profile>
             <id>autoInstallPackage</id>
             <build>
