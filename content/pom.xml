@@ -84,6 +84,7 @@
 							</execution>
 						</executions>
 						<configuration>
+							<diffCmd>git diff --name-only HEAD~1 HEAD</diffCmd>
 							<outputDirectory>${project.build.directory}/aempackagediff</outputDirectory>
 						</configuration>
 					</plugin>
